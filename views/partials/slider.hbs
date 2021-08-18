@@ -1,0 +1,34 @@
+<div class="slider">
+
+  <ul class="controls">
+    {{#each sliderImages as |image|}}
+      <li data-index-number="{{@index}}" 
+        {{#if image.active}}class="active"{{/if}} 
+        title="{{image.alt}}"></li>
+    {{/each}}
+  </ul>
+
+  <div class="images">
+    {{#each sliderImages as |image|}}
+      <img data-index-number="{{@index}}" 
+        {{#if image.active}}class="active"{{/if}} 
+        src="{{image.src}}" 
+        alt="{{image.alt}}">
+    {{/each}}
+    </div>
+
+  <script type="module">
+    import Slider from "/javascripts/slider.js";
+    let mySlider = new Slider($('.slider').last());
+  </script>
+
+  <p>
+    <b>NOTE!</b> This slider uses modules via import and will not work unless 
+    you have the latest version of Chrome v61+, or you will need to enable 
+    flags for your browser listed in this article below if you are running 
+    another browser such as Firefox, Safari, or Microsoft Edge.
+  </p>
+  <p>
+    <a href="https://jakearchibald.com/2017/es-modules-in-browsers/">https://jakearchibald.com/2017/es-modules-in-browsers/</a>
+  </p>
+</div>
