@@ -1,0 +1,88 @@
+@import 'colors';
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: $grey;
+  color: $white;
+}
+
+a {
+  color: $orange;
+  &:hover {
+    color: $blue;
+  }
+}
+
+h1 {
+  color: $green;
+}
+
+header {
+  border-bottom: 1px solid $greyLigther;
+}
+
+pre {
+  color: $orange;
+}
+
+.nav-link {
+  padding: .75rem 1rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: $blueDarker;
+}
+
+.slider {
+  div.images {
+    height: 600px;
+    overflow: hidden;
+    img {
+      display: none;
+      width: 90%;
+      margin: auto;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  ul.controls {
+    max-width: 200px;
+    margin: auto;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 20px;
+      height: 20px;
+      background-color: $orange;
+      display: block;
+      border-radius: 33%;
+      border: 1px solid $greyLigther;
+      cursor: pointer;
+      &.active {
+        background-color: $green;
+      }
+    }
+  }
+}
+
+.scroller {
+  height: 240px;
+  overflow-y: scroll;
+  background-color: $grey5;
+  color: $green;
+  padding: 40px 20px;
+}
+
+.rules {
+  img {
+    //margin: auto;
+    //display: block;
+    width: 374px;
+    max-width: 100%;
+  }
+
+}

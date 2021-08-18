@@ -1,0 +1,71 @@
+/** Others I looked at
+*   http://cinderwick.ca/files/themes/vimbrant/preview_terminal.png
+*   https://orig00.deviantart.net/af22/f/2015/224/f/d/my_i3wm_manjaro_monokai_august_screenshot_by_anshulc95-d95ceu4.png
+*   
+*/
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #272822;
+  color: #EEE; }
+
+a {
+  color: #FD971F; }
+  a:hover {
+    color: #66D9EF; }
+
+h1 {
+  color: #A6E22E; }
+
+header {
+  border-bottom: 1px solid #777; }
+
+pre {
+  color: #FD971F; }
+
+.nav-link {
+  padding: .75rem 1rem; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #007bff; }
+
+.slider div.images {
+  height: 600px;
+  overflow: hidden; }
+  .slider div.images img {
+    display: none;
+    width: 90%;
+    margin: auto; }
+    .slider div.images img.active {
+      display: block; }
+
+.slider ul.controls {
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; }
+  .slider ul.controls li {
+    width: 20px;
+    height: 20px;
+    background-color: #FD971F;
+    display: block;
+    border-radius: 33%;
+    border: 1px solid #777;
+    cursor: pointer; }
+    .slider ul.controls li.active {
+      background-color: #A6E22E; }
+
+.scroller {
+  height: 240px;
+  overflow-y: scroll;
+  background-color: #555;
+  color: #A6E22E;
+  padding: 40px 20px; }
+
+.rules img {
+  width: 374px;
+  max-width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
