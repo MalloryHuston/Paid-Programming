@@ -1,0 +1,27 @@
+{
+  "name": "cs290-project-pair-programming",
+  "version": "1.0.0",
+  "description": "This project is a blog-like site where you can download the JavaScript code snippet for how to set up The Game of Life by John Conway.",
+  "main": "app.js",
+  "scripts": {
+    "webpack": "node_modules/.bin/webpack --config webpack.config.js"
+  },
+  "author": "Mallory Huston",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "bootstrap": "^4.3.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.17.1",
+    "forever": "^3.0.0",
+    "hbs": "~4.0.1",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "^0.11.0",
+    "serve-favicon": "~2.5.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
